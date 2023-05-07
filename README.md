@@ -6,13 +6,17 @@ This is a starter project for building web applications using Node.js, Express, 
 
 To get started with this project, you will need to clone the repository and install the dependencies:
 
-`git clone https://github.com/AndoMickael/starter-express-ejs.git`
-`cd express-ejs-starter`
-`npm install` 
+```bash
+git clone https://github.com/AndoMickael/starter-express-ejs.git
+cd express-ejs-starter
+npm install
+```
 
 After installing the dependencies, you can start the development server by running:
 
-`npm run dev` 
+```bash
+npm run dev
+```
 
 This will start the server at [http://localhost:3000](http://localhost:3000/).
 
