@@ -1,0 +1,10 @@
+# folders
+node_modules
+dist
+build
+tmp
+.vscode
+.idea
+
+# files
+.env
