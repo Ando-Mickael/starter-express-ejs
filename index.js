@@ -14,10 +14,11 @@ app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.use(express.static(__dirname + '/public'))
 app.use(cors())
-app.use(bodyParser.urlencoded({ extendcleaed: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
 // routes
 app.use('/', indexRouter)
 
 // server
-app.listen(SERVER_PORT, () => console.log(`> http://localhost:${SERVER_PORT}`))
+app.listen(SERVER_PORT, () => console.log(`\n> http://localhost:${SERVER_PORT}`))
