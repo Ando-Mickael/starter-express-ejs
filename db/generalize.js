@@ -1,27 +1,27 @@
 function select(connection, tabelName, dataIdentifier = {}) {
     return connection(tabelName)
         .select()
-        .where(dataIdentifier)
+        .where(dataIdentifier);
 }
 
 function insert(connection, tableName, data) {
     return connection(tableName)
         .insert(data)
-        .returning("*")
+        .returning("*");
 }
 
 function update(connection, tableName, dataIdentifier, newData) {
     return connection(tableName)
         .update(newData)
         .where(dataIdentifier)
-        .returning("*")
+        .returning("*");
 }
 
 function deleteData(connection, tableName, dataIdentifier) {
     return connection(tableName)
         .delete()
         .where(dataIdentifier)
-        .returning("*")
+        .returning("*");
 }
 
 module.exports = {

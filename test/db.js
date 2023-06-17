@@ -1,4 +1,4 @@
-const knex = require('../db/database')
+const knex = require('../db/database');
 
 // knex('personne')
 //     .select()
@@ -19,4 +19,4 @@ const knex = require('../db/database')
 // knex.raw("select * from personne where id = ?", [1])
 //     .then(personne => {
 //         console.log(personne.rows)
-//     }) 
+//     });

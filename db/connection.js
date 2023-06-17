@@ -1,5 +1,5 @@
-require('dotenv').config()
-const { Pool } = require('pg')
+require('dotenv').config();
+const { Pool } = require('pg');
 
 function getKnex() {
     const knex = require('knex')({
@@ -10,9 +10,9 @@ function getKnex() {
             password: process.env.DB_PWD,
             database: process.env.DB_NAME
         }
-    })
+    });
 
-    return knex
+    return knex;
 }
 
 function getPool() {
@@ -22,9 +22,9 @@ function getPool() {
         database: process.env.DB_NAME,
         password: process.env.DB_PWD,
         port: process.env.DB_PORT,
-    })
+    });
 
-    return pool
+    return pool;
 }
 
 module.exports = {
